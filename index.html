@@ -486,7 +486,7 @@
                     label: 'Projected Market Value (USD Billions)',
                     data: [1.2, 2.5, 5, 10, 20, 45, 82],
                     borderColor: accent1,
-                    backgroundColor: rgba(74, 144, 226, 0.2),
+                    backgroundColor: "rgba(74, 144, 226, 0.2)",
                     fill: true,
                     tension: 0.4,
                     pointBackgroundColor: accent3,
@@ -612,7 +612,7 @@
                                     label += ': ';
                                 }
                                 if (context.parsed.x !== null) {
-                                    label += Users: ${context.parsed.x}K, Devs: ${context.parsed.y} (Score), Funding: $${context.raw.r}M;
+                                    label += `Users: ${context.parsed.x}K, Devs: ${context.parsed.y} (Score), Funding: $${context.raw.r}M`;
                                 }
                                 return label;
                             },
